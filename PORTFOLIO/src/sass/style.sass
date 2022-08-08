@@ -1,3 +1,5 @@
+*
+	box-sizing: border-box
 body
 	font-family: 'Inter', sans-serif
 .navbar
@@ -131,3 +133,90 @@ body
 	margin-top: 8px
 	margin-bottom: 16px
 
+// блок developer
+.developer
+	display: flex
+	align-items: center
+	padding: 80px 0 20px
+	&-photo
+		width: 360px
+		height: 440px
+		border-radius: 20px
+	&-about
+		margin-left: 55px
+	&-hello
+		font-size: 24px
+		line-height: 135%
+		letter-spacing: -0.02em
+		color: #211B12
+	&-title
+		font-weight: 700
+		font-size: 32px
+		line-height: 125%
+		letter-spacing: -0.03em
+		color: #BF7506
+		margin-top: 4px
+		margin-bottom: 16px
+	&-sing
+		max-width: 200px	
+.motto
+	font-family: 'Helvetica'
+	font-style: normal
+	font-weight: 700
+	font-size: 24px
+	line-height: 150%
+	color: #DD9C3C
+	margin: 16px 0
+
+// блок skills
+.skills
+	padding: 20px 0
+.skills-title
+	font-weight: 700
+	font-size: 24px
+	line-height: 135%
+	color: #211B12
+
+// блок с обратной связью
+.feedback
+	padding: 80px 0 160px
+.input
+	border: 3px solid #E0DEDC
+	border-radius: 4px
+	width: 435px
+	height: 56px
+	&-group
+		position: relative
+		padding-top: 9px
+		margin-bottom: 24px
+	&-label
+		position: absolute
+		font-weight: 400
+		font-size: 16px
+		line-height: 150%
+		color: #83807C
+		padding: 0 8px
+		background-color: #ffffff
+		top: 0
+		left: 16px
+.textarea
+	min-height: 140px
+.form-container
+	max-width: 435px
+	margin: auto
+.submit-button
+	display: flex
+	align-items: center
+	text-decoration: none
+	padding: 7px 8px
+	font-weight: 700
+	font-size: 16px
+	line-height: 150%
+	color: #211B12
+	border: none
+	border-bottom: 2px solid #BF7506
+	background-color: #fff
+	cursor: pointer
+.button-group
+	display: flex
+	justify-content: flex-end
