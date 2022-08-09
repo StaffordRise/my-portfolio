@@ -12,19 +12,20 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+	
 	<div class="navbar container">
 		<img src="img/logo.svg" alt="Logo">
 		<nav class="navigation">
 			<ul class="nav-list">
-				<li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Обо мне</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Связаться</a></li>
+				<li class="nav-item"><a href="#main" class="nav-link active">Главная</a></li>
+				<li class="nav-item"><a href="#portfolio" class="nav-link">Проекты</a></li>
+				<li class="nav-item"><a href="#developer" class="nav-link">Обо мне</a></li>
+				<li class="nav-item"><a href="#feedback" class="nav-link">Связаться</a></li>
 			</ul>
 		</nav>
 	</div><!-- navbar -->
 
-	<header class="header container">
+	<header class="header container" id="main">
 		<img src="img/avatar.png" alt="Сергей Орлов" class="header-photo">		
 		<div class="header-text">
 			<strong class="header-strong">Привет 👋</strong>
@@ -56,7 +57,7 @@
 					</li>
 
 				</ul>
-				<a href="#" class="cv-download" download>
+				<a href="dwnld/Erik_Frimen_Elizabet_Robson_2013_Izuchaem_Pro.pdf" class="cv-download" download>
 					<div class="cv-icon">
 						<img src="img/Icons/download.svg" alt="download-icon">
 					</div>					
@@ -66,7 +67,7 @@
 		</div><!-- header-text -->
 	</header><!-- header -->
 
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<h2 class="section-heading">Последние проекты</h2>
 			<div class="cards">
@@ -124,24 +125,25 @@
 		</div><!-- container -->
 	</section><!-- portfolio -->
 
-	<section class="developer container">
-		<img src="img/avatar.jpg" alt="Сергей Орлов" class="developer-photo">
-		<div class="developer-about">
-			<span class="developer-hello">Рад вас видеть</span>
-			<h2 class="developer-title">Я Сергей Орлов</h2>
-			<p class="developer-text">
-				Я разрабатываю сайты для людей и компаний. Делаю всё сам: составляю прототип, дизайн-макет, пишу код.
-			</p>
-			<span class="motto">Код, Дизайн, Обучение</span>
-			<p class="developer-text">
-				Могу собрать страницу для вашей компании, даже если запускать её нужно уже завтра. Из инструментов есть: 
-				Tilda, Webflow, Figma, HTML, CSS, JavaScript и Wordpress 
-			</p>
-			<img src="img/sing.png" alt="Сергей Орлов" class="developer-sing">
-		</div><!-- developer-about -->
+	<section class="developer container"
+		id="developer">
+			<img src="img/avatar.jpg" alt="Сергей Орлов" class="developer-photo">
+			<div class="developer-about">
+				<span class="developer-hello">Рад вас видеть</span>
+				<h2 class="developer-title">Я Сергей Орлов</h2>
+				<p class="developer-text">
+					Я разрабатываю сайты для людей и компаний. Делаю всё сам: составляю прототип, дизайн-макет, пишу код.
+				</p>
+				<span class="motto">Код, Дизайн, Обучение</span>
+				<p class="developer-text">
+					Могу собрать страницу для вашей компании, даже если запускать её нужно уже завтра. Из инструментов есть: 
+					Tilda, Webflow, Figma, HTML, CSS, JavaScript и Wordpress 
+				</p>
+				<img src="img/sing.png" alt="Сергей Орлов" class="developer-sing">
+			</div><!-- developer-about -->
 	</section><!-- developer -->
 
-	<section class="skills container">
+	<section class="skills container" id="skills">
 		<h2 class="slills-title">Работаю с разными языками и инструментами</h2>
 		<ul class="tags">
 			<li class="tags-item"><a href="#" class="tag">HTML</a></li>
@@ -156,35 +158,33 @@
 		</ul>
 	</section>
 
-	<section class="feedback form-container">
-		<h2 class="feedback-title">Готов обсудить проект...</h2>
-		<form action="#" class="form">
-			<div class="input-group">
-				<label for="userName" class="input-label">Имя</label>
-				<input id="userName" type="text" class="input">
-			</div><!-- input-group -->
-			<div class="input-group">
-				<label for="userEmail" class="input-label">Email</label>
-				<input id="username" type="text" class="input">
-			</div><!-- input-group -->
-			 <div class="input-group">
-			 	<label for="userMessage" class="input-label">Сообщение</label>
-			 	<textarea id="userMessage" cols="30" rows="10" class="input textarea"></textarea>
-			 </div><!-- input-group -->
-			 <div class="button-group">
-			 	<button type="submit" class="submit-button">
-			 		<div class="cv-icon">
-			 			<img src="img/Icons/send.svg" alt="send-icon">
-			 		</div>					
-			 		<span class="cv-text">Отправить</span>
-			 	</button>
-			 </div>
-		</form>
-
-
-
-
-
+	<section class="feedback" id="feedback">
+		<img class="feedback-hand" src="img/hand.png" alt="рука">
+		<div class="form-container">
+			<h2 class="feedback-title">Готов обсудить проект...</h2>
+			<form action="#" class="form">
+				<div class="input-group">
+					<label for="userName" class="input-label">Имя</label>
+					<input id="userName" type="text" class="input">
+				</div><!-- input-group -->
+				<div class="input-group">
+					<label for="userEmail" class="input-label">Email</label>
+					<input id="username" type="text" class="input">
+				</div><!-- input-group -->
+				 <div class="input-group">
+				 	<label for="userMessage" class="input-label">Сообщение</label>
+				 	<textarea id="userMessage" cols="30" rows="10" class="input textarea"></textarea>
+				 </div><!-- input-group -->
+				 <div class="button-group">
+				 	<button type="submit" class="submit-button">
+				 		<div class="cv-icon">
+				 			<img src="img/Icons/send.svg" alt="send-icon">
+				 		</div>					
+				 		<span class="cv-text">Отправить</span>
+				 	</button>
+				 </div>
+			</form>
+		</div><!-- form-container -->
 	</section>
 
 </body>
